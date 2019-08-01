@@ -4,7 +4,7 @@
 % load summary_invest
 % load invest_decreasesym_4mei2019 softmax_pars_est softmax_bestNLL
 
-function [binCentersPp, binProportionsPp, pInvestsFromModel] = plotInvestVarBinsdeterminedbinsize_Decrease(data, pars_est, softmax_pars_est, nBins)
+function [binCentersPp, binProportionsPp, pInvestsFromModel] = plotInvestDecisions_CAS(data, pars_est, softmax_pars_est, nBins)
     if ~isfield(data, 'rawChoice')
         disp('data does not have the rawChoice field. Can''t plot data');
         return;
